@@ -10,7 +10,7 @@ export default function Dashboard() {
         email: '',
     });
 
-    function handleChange(e) {
+    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         const key = e.target.id;
         const value = e.target.value;
         setValues((values) => ({
